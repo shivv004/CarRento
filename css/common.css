@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 10rem;
+    background-color: #2b3035;
+}
+.navbar-brand{
+    font-size: 26px !important;
+    color: #ebebeb !important;
+}
+.navbar-collapse{
+    padding-left: 1rem;
+}
+.navbar-nav{
+    gap: 0.75rem;
+}
+.cred-body{
+    background-color: #18191d;
+    height: 100vh;
+}
+.cred-container{
+    width: 450px;
+    margin: 3rem auto;
+    color: #fff;
+}
+.cred-container span{
+    line-height: 4;
+    font-size: 40px;
+}
+#nav-user-name{
+    align-self: center;
+    color: #fff;
+}
+.nav-vl{
+    border: 1px solid #5f5f5f;
+    height: 31px;
+    margin: 6px 2px 0 10px;
+}
