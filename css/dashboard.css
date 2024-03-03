@@ -47,3 +47,19 @@
 .dash-logout-link{
     color: #da3633;
 }
+.dashboard-cars{
+    margin: 0 11rem;
+    padding-bottom: 4rem;
+}
+#add-car-btn{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 383px;
+}
+#add-car-btn svg{
+    margin: auto;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+}

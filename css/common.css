@@ -36,3 +36,52 @@
     line-height: 4;
     font-size: 40px;
 }
+.booking-card-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.booking-card{
+    background-color: #2b3035;
+    border-radius: 20px;
+    height: fit-content;
+    position: relative;
+}
+.booking-card-row-1{
+    height: 45%;
+    padding: 0 4rem;
+    border-bottom: 1px solid #5c5c5c;
+}
+.booking-card-row-1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.booking-card-row-2{
+    color: #ebebeb;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    font-size: 14px;
+}
+.booking-card-row-3{
+    padding: 0 1rem 1rem 1rem;
+}
+#remove-card{
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+    color: #da3633;
+}
+.start-date{
+    margin-top: 1rem;
+    color: #d8d8d8;
+    padding: 0 0.8rem;
+    display: flex;
+    text-wrap: nowrap;
+    gap: 0.5rem;
+}
+.start-date span{
+    margin: auto;
+}

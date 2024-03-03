@@ -4,13 +4,13 @@
 .main img{
     width: 100%;
     filter: brightness(30%);
-    min-height: 588px;
     object-fit: cover;
 }
 .main-sec-1{
     position: relative;
     display: flex;
     justify-content: center;
+    height: 90.5vh;
 }
 .main-sec-1-container{
     position: absolute;

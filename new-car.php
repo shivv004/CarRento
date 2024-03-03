@@ -1,5 +1,8 @@
 <?php
   session_start();
+    if ($_SESSION["isAgency"] == 0) {
+    header("location: index.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +23,7 @@
                 <span>Add a New Car to Rent</span>
             </div>
             <div class="new-car-form">
-            <form method="post" action="api/new-car-controller.php">
+            <form data-bs-theme="dark" method="post" action="api/new-car-controller.php">
             <div class="mb-3">
                 <label class="form-label">Vehicle model</label>
                 <input type="text" name="vehicle_model" class="form-control" required>
@@ -34,7 +37,7 @@
                 <input type="text" name="seating_capacity" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label class="form-label">Rent per day</label>
+                <label class="form-label">Rent per day (₹)</label>
                 <input type="text" name="rent_per_day" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
