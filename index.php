@@ -29,13 +29,13 @@
             <span class="contact-text-2">Below is a simple contact form designed for the home page of CarRento. Feel free to reach out to us using this form for any inquiries, feedback, or questions you may have. We look forward to hearing from you!</span>
           </div>
           <div class="main-sec-2-contact-form">
-            <form class="my-3" data-bs-theme="dark">
+            <form class="my-3" data-bs-theme="dark" method="post" action="api/contact_controller.php">
               <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <textarea class="form-control" name="question" MaxLength="500" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
                 <label for="floatingTextarea">Ask us!</label>
               </div>
               <div class="mb-3">
-                <input type="email" placeholder="Enter your email" class="form-control">
+                <input type="email" name="email" placeholder="Enter your email" class="form-control" required>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>

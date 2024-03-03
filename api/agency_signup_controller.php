@@ -2,6 +2,7 @@
 require("../components/database_connect.php");
 
 $name = $_POST['name'];
+$agencyName = $_POST['agencyName'];
 $isAgency = "1";
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -20,7 +21,7 @@ if ($row_count != 0) {
 	exit;
 }
 // --------------------------------------
-$sql = "INSERT INTO users (name, isAgency, email, password) VALUES ('$name', '$isAgency', '$email', '$password')";
+$sql = "INSERT INTO users (name, agencyName, isAgency, email, password) VALUES ('$name', '$agencyName', '$isAgency', '$email', '$password')";
 $result = mysqli_query($conn, $sql);
 if (!$result) {
 	echo "Something went wrong!";

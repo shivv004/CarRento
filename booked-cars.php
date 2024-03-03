@@ -8,7 +8,7 @@
         <?php
             include "components/head_tags.php";
         ?>
-        <title>Booking | CarRento</title>
+        <title>View booked cars | CarRento</title>
         <link rel="stylesheet" href="css/booking-page.css">
     </head>
     <body>
@@ -17,10 +17,7 @@
         ?>
         <div class="booking-page">
             <div class="booking-page-title">
-                <span>Available cars for rent</span>
-            </div>
-            <div class="booking-page-main">
-                
+                <span>All Booked Cars</span>
             </div>
         </div>
         <!-- Bootstrap js -->

@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  if (!isset($_SESSION["id"])) {
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,7 +16,7 @@
         ?>
         <div class="cred-container">
         <form data-bs-theme="dark" method="post" action="api/user_signup_controller.php">
-            <span>Signup for Customer!</span>
+            <span>Signup for Customer</span>
             <div class="mb-3">
                 <label class="form-label">Name</label>
                 <input type="text" name="name" class="form-control" required>
@@ -31,3 +35,8 @@
         </div>
     </body>
 </html>
+<?php
+} else {
+    header("location: ../CarRento/dashboard.php");
+}
+?>

@@ -20,6 +20,7 @@ if ($row_count == 0) {
 $row = mysqli_fetch_assoc($result);
 $_SESSION['id'] = $row['id'];
 $_SESSION['name'] = $row['name'];
+$_SESSION['agencyName'] = $row['agencyName'];
 $_SESSION['isAgency'] = $row['isAgency'];
 $_SESSION['email'] = $row['email'];
 

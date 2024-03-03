@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  if (!isset($_SESSION["id"])) {
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,10 +16,14 @@
         ?>
         <div class="cred-container">
         <form data-bs-theme="dark"  method="post" action="api/agency_signup_controller.php">
-            <span>Signup for Agency!</span>
+            <span>Signup for Agency</span>
             <div class="mb-3">
-                <label class="form-label">Your Agency Name</label>
+                <label class="form-label">Name</label>
                 <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Agency Name</label>
+                <input type="text" name="agencyName" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -31,3 +39,8 @@
         </div>
     </body>
 </html>
+<?php
+} else {
+    header("location: ../CarRento/dashboard.php");
+}
+?>

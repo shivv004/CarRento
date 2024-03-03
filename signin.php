@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  if (!isset($_SESSION["id"])) {
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,3 +30,9 @@
         </div>
     </body>
 </html>
+<?php
+} else {
+    header("location: ../CarRento/dashboard.php");
+}
+?>
+

@@ -1,0 +1,10 @@
+.booking-page{
+    background-color: #18191d;
+    min-height: 100vh;
+}
+.booking-page-title{
+    text-align: center;
+    line-height: 4;
+    font-size: 40px;
+    color: #fff;
+}

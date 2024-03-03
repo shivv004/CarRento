@@ -1,0 +1,15 @@
+.new-car-page{
+    background-color: #18191d;
+    min-height: 100vh;
+}
+.new-car-page-title{
+    text-align: center;
+    line-height: 4;
+    font-size: 40px;
+    color: #fff;
+}
+.new-car-form{
+    width: 500px;
+    margin: 0 auto;
+    color: #fff;
+}
