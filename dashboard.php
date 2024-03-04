@@ -28,17 +28,6 @@ if (!$result2) {
     return;
 }
 
-function delete_card($car_id) {
-    global $conn;
-    $remove_card_sql = "DELETE FROM cars WHERE id = $car_id";
-    $result3 = mysqli_query($conn, $remove_card_sql);
-    if(!$result3){
-        echo "Something went wrong!";
-        return;
-    } else{
-        echo "<script>window.location.href='dashboard.php';</script>";
-    }
-}
 //-------------------------------------------------------
 $select_booked_cars_sql = "SELECT * FROM booked_cars WHERE user_id = $id ORDER BY id DESC";
 $select_booked_cars_result = mysqli_query($conn, $select_booked_cars_sql);
@@ -47,17 +36,6 @@ if (!$select_booked_cars_result) {
     return;
 }
 
-function cancel_booking($booked_car_id) {
-    global $conn;
-    $remove_booking_sql = "DELETE FROM booked_cars WHERE id = $booked_car_id";
-    $remove_booking_result = mysqli_query($conn, $remove_booking_sql);
-    if(!$remove_booking_result){
-        echo "Something went wrong!";
-        return;
-    } else{
-        echo "<script>window.location.href='dashboard.php';</script>";
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -126,7 +104,6 @@ include "components/navbar.php";
                 if (!$cars) {
                     break;
                 }
-                $delete_car = $cars['id'];
                 ?>
                 <div class="booking-card">
                     <div class="booking-card-row-1">
@@ -138,13 +115,7 @@ include "components/navbar.php";
                         <span>Seating capacity: <?= $cars['seating_capacity'] ?></span>
                         <span>Rent per day (₹): <?= $cars['rent_per_day'] ?></span>
                     </div>
-                    <a id="remove-card" href='dashboard.php?delete-car=true'>Remove</a>
-                    <?php
-                        if (isset($_GET['delete-car'])) {
-                            delete_card($delete_car);
-                            break;
-                        }
-                    ?>
+                    <a id="edit-card" href='edit-car.php?car_id=<?= $cars['id'] ?>'>Edit</a>
                 </div>
             <?php
                 }
@@ -182,8 +153,6 @@ include "components/navbar.php";
                         return;
                     }
                     $booked_car_details = mysqli_fetch_assoc($booked_car_details_result);
-
-                    $delete_booking = $booked_cars['id'];
                 ?>
                     <div class="booking-card">
                         <div class="booking-card-row-1">
@@ -197,13 +166,6 @@ include "components/navbar.php";
                             <span>Number of days: <?= $booked_cars['num_of_days'] ?></span>
                             <span>Start Date: <?= $booked_cars['start_date'] ?></span>
                         </div>
-                        <a id="remove-card" href='dashboard.php?delete-booking=true'>Remove</a>
-                        <?php
-                            if (isset($_GET['delete-booking'])) {
-                                cancel_booking($delete_booking);
-                                break;
-                            }
-                        ?>
                     </div>
                 <?php
                 }

@@ -20,7 +20,7 @@
         ?>
         <div class="new-car-page">
             <div class="new-car-page-title">
-                <span>Add a New Car to Rent</span>
+                <span>Add a new car to rent</span>
             </div>
             <div class="new-car-form">
             <form data-bs-theme="dark" method="post" action="api/new-car-controller.php">
@@ -40,7 +40,7 @@
                 <label class="form-label">Rent per day (₹)</label>
                 <input type="text" name="rent_per_day" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Add car</button>
             </form>
             </div>
         </div>
