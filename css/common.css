@@ -85,3 +85,51 @@
 .start-date span{
     margin: auto;
 }
+
+@media screen and (max-width: 1250px) and (min-width: 990px){
+    .header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 0 2rem;
+        background-color: #2b3035;
+    }
+    .booking-card-group{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 990px){
+    .header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 0 1rem;
+        background-color: #2b3035;
+    }
+    .booking-card-group{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .cred-body{
+        background-color: #18191d;
+        height: 100vh;
+    }
+    .cred-container{
+        width: 80vw;
+        margin: 3rem auto;
+        color: #fff;
+        padding-bottom: 5rem;
+    }
+    .cred-container span{
+        line-height: 1.6;
+        font-size: 40px;
+    }
+    #cred-mail{
+        margin-top: 2rem;
+    }
+}

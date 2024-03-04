@@ -17,7 +17,7 @@
         <div class="cred-container">
         <form data-bs-theme="dark"  method="post" action="api/agency_signup_controller.php">
             <span>Signup for Agency</span>
-            <div class="mb-3">
+            <div id="cred-mail" class="mb-3">
                 <label class="form-label">Name</label>
                 <input type="text" name="name" class="form-control" required>
             </div>
@@ -37,6 +37,8 @@
             <button type="submit" class="btn btn-primary mt-3">Signup</button>
             </form>
         </div>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
 <?php

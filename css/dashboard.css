@@ -63,3 +63,79 @@
     height: 70px;
     width: 70px;
 }
+@media screen and (max-width: 1250px) and (min-width: 990px){
+    .dashboard-body{
+        background-color: #18191d;
+        min-height: 100vh;
+        padding: 0 2rem;
+    }
+    .dashboard-title{
+        text-align: left;
+        line-height: 4;
+        font-size: 25px;
+        color: #fff;
+        margin: 0;
+    }
+    .dashboard-title span{
+        font-size: 25px !important;
+    }
+    .dashboard-details{
+        border: 1px solid #5c5c5c;
+        height: auto;
+        border-radius: 10px;
+        padding: 2rem 2rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: min-content;
+        text-wrap: nowrap;
+        position: relative;
+    }
+    .dashboard-details-col2{
+        margin: 0 0 1rem 0;
+    }
+    .dashboard-cars{
+        margin: 0;
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .dashboard-body{
+        background-color: #18191d;
+        min-height: 100vh;
+        padding: 0 2rem;
+    }
+    .dashboard-title{
+        text-align: left;
+        line-height: 4;
+        font-size: 25px;
+        color: #fff;
+        margin: 0;
+    }
+    .dashboard-title span{
+        font-size: 25px !important;
+    }
+    .dashboard-details{
+        border: 1px solid #5c5c5c;
+        height: auto;
+        border-radius: 10px;
+        padding: 2rem 2rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: auto;
+        text-wrap: wrap;
+        position: relative;
+    }
+    .dashboard-details-col2{
+        font-size: 14px;
+        margin: 0 0 1rem 0;
+    }
+    .dashboard-cars{
+        margin: 0;
+        padding-bottom: 4rem;
+    }
+}

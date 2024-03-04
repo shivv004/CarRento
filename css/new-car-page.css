@@ -13,3 +13,23 @@
     margin: 0 auto;
     color: #fff;
 }
+
+@media screen and (max-width: 990px){
+    .new-car-page{
+        background-color: #18191d;
+        min-height: 100vh;
+        padding: 0 2rem;
+    }
+    .new-car-page-title{
+        text-align: center;
+        line-height: 1.5;
+        font-size: 40px;
+        color: #fff;
+        padding: 2rem 0;
+    }
+    .new-car-form{
+        width: auto;
+        margin: 0 auto;
+        color: #fff;
+    }
+}

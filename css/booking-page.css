@@ -12,3 +12,44 @@
     margin: 0 11rem;
     padding-bottom: 4rem;
 }
+.booked-car-page{
+    background-color: #18191d;
+    min-height: 100vh;
+    padding: 0 11rem 4rem 11rem;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 990px){
+    .booking-page-main{
+        margin: 0 2rem;
+        padding-bottom: 4rem;
+    }
+    .booked-car-page{
+        background-color: #18191d;
+        min-height: 100vh;
+        padding: 0 2rem 4rem 2rem;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .booking-page{
+        background-color: #18191d;
+        min-height: 100vh;
+        padding: 0 2rem;
+    }
+    .booking-page-main{
+        margin: 0 0rem;
+        padding-bottom: 4rem;
+    }
+    .booked-car-page{
+        background-color: #18191d;
+        min-height: 100vh;
+        padding: 0 2rem 4rem 2rem;
+    }
+    .booking-page-title{
+        text-align: center;
+        line-height: 1.5;
+        font-size: 40px;
+        color: #fff;
+        padding: 2rem 0;
+    }
+}
